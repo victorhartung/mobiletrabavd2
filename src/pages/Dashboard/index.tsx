@@ -23,7 +23,7 @@ export function Dashboard() {
   const validStates = ['RJ', 'SP', 'MG'];
   const validProviders = ['Totvs', 'Microsoft'];
 
-  function calculateTax(productCode: string, state: string, invoiceValue: string): number {
+  function calculateTax(productCode: string, state: string, invoiceValue: number): number {
     if((productCode === '1234' || productCode === '6789') && state === 'RJ') {
      
       return invoiceValue * 0.01;
